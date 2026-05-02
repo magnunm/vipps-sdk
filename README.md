@@ -3,6 +3,20 @@
 An *unofficial* TypeScript SDK for the [Vipps MobilePay ePayment
 API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/).
 
+## Installation
+
+With npm:
+
+```sh
+npm i vipps-sdk
+```
+
+With Deno:
+
+```sh
+deno add jsr:@magnunm/vipps-sdk
+```
+
 ## Quick start
 
 ```ts
