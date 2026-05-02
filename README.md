@@ -3,6 +3,25 @@
 An *unofficial* TypeScript SDK for the [Vipps MobilePay ePayment
 API](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/).
 
+## Table of contents
+
+- [Installation](#installation)
+- [Quick start](#quick-start)
+- [Configuration](#configuration)
+- [API](#api)
+  - [`createPayment(request, idempotencyKey?)`](#createpaymentrequest-idempotencykey)
+  - [`getPayment(reference)`](#getpaymentreference)
+  - [`getPaymentEventLog(reference)`](#getpaymenteventlogreference)
+  - [`capturePayment(reference, body, idempotencyKey?)`](#capturepaymentreference-body-idempotencykey)
+  - [`cancelPayment(reference, body?)`](#cancelpaymentreference-body)
+  - [`refundPayment(reference, body, idempotencyKey?)`](#refundpaymentreference-body-idempotencykey)
+  - [`forceApprove(reference, body?)` (test environment only)](#forceapprovereference-body-test-environment-only)
+- [Error handling](#error-handling)
+- [Webhook events](#webhook-events)
+- [Development](#development)
+- [License](#license)
+- [Disclaimer](#disclaimer)
+
 ## Installation
 
 With npm:
