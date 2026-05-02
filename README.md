@@ -165,13 +165,21 @@ async function handleWebhook(req: Request): Promise<Response> {
 
 ## Development
 
+This project uses the Deno runtime.
+
 ```sh
 # Run tests
 deno task test
 
 # Check types without running tests
 deno check mod.ts
+
+# Download the OpenAPI spec and verify the SDKs compatibility with it.
+deno task test:integration
 ```
+
+A Node/npm compatible package can be built with `deno task build:npm`, it will
+be placed in the `npm/` directory.
 
 ## License
 
